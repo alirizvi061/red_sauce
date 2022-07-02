@@ -1,16 +1,14 @@
-import React from "react";
+import React from 'react';
 
-function Home() {
+function Home(props) {
     return (
-        <>
-            <div>
-                {/* <header className='App-header'> */}
+        <div className='App'>
+            <header className='App-header'>
                 <h3>Welcome to Red Sauce</h3>
                 <p>Your personal Blog Post Application</p>
-                {/* </header> */}
-            </div>
-        </>
-    )
+            </header>
+        </div>
+    );
 }
 
 export default Home;

@@ -1,19 +1,24 @@
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import About from './components/About';
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import Blog from './components/Blog';
 
-function WelcomeMessage(){
-  return <h3>Welcome to Red Sauce</h3>
-}
+function App(){
+	return(
+		<Router>
+			<Navigation />
+				<div>
+					<Routes>
+						<Route exact path="/home" element={<Home/>}  />
+						<Route exact path="/about" element={<About/>} />
+						<Route exact path="/blog" element={<Blog />} />
+					</Routes>
+				</div>
 
-function App() {
-	return (
-		<div className='App'>
-			<header className='App-header'>
-        <WelcomeMessage />
-        <p>Your personal Blog Post Application</p>
-
-			</header>
-		</div>
-	);
+		</Router>
+	)
 }
 
 export default App;

@@ -5,6 +5,7 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Blog from './components/Blog';
 
+
 function App(){
 	return(
 		<Router>

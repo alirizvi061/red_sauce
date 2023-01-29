@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Home(props) {
     return (
         <div className='App'>
@@ -12,7 +13,7 @@ function Home(props) {
                 </p>
 
             </header>
-        </div>
+          </div>
     );
 }
 
